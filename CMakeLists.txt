@@ -1,6 +1,12 @@
+IF(COMMAND cmake_policy)
+  cmake_policy(SET CMP0003 NEW)
+ENDIF(COMMAND cmake_policy)
+
 CMAKE_MINIMUM_REQUIRED(VERSION 2.4)
 
 PROJECT(sqlite)
+
+INCLUDE(${CMAKE_ROOT}/Modules/CMakeBackwardCompatibilityC.cmake)
 
 SET(SQLite_SRCS
    sqlite3.c
