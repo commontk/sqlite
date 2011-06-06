@@ -1,4 +1,4 @@
-PROJET(sqlite)
+PROJECT(sqlite)
 
 SET(SQLite_SRCS
    sqlite3.c
