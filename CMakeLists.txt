@@ -1,10 +1,8 @@
+PROJET(sqlite)
+
 SET(SQLite_SRCS
    sqlite3.c
 )
-
-
-# You really, really want this library to be statically linked on
-# Windows.
 
 IF (WIN32)
   ADD_LIBRARY( sqlite STATIC ${SQLite_SRCS} )
@@ -27,4 +25,4 @@ IF(UNIX)
   TARGET_LINK_LIBRARIES(sqlite3 dl)
 ENDIF(UNIX)
 
-
+INCLUDE(GenerateSQLiteConfig.cmake)

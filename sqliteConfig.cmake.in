@@ -1,0 +1,7 @@
+SET(sqlite_LIBRARY_DIRS "@sqlite_LIBRARY_DIRS_CONFIG@")
+
+SET(sqlite_LIBRARIES sqlite)
+
+SET(sqlite_INCLUDE_DIRS "@sqlite_INCLUDE_DIRS_CONFIG@")
+
+set(sqlite_USE_FILE "@sqlite_USE_FILE_CONFIG@")
