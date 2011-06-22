@@ -3,7 +3,7 @@ CONFIGURE_FILE(
   ${sqlite_BINARY_DIR}/Usesqlite.cmake COPYONLY)
 
 # Library directory
-SET(sqlite_LIBRARY_DIRS_CONFIG ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+SET(sqlite_LIBRARY_DIRS_CONFIG ${sqlite_BINARY_DIR}/bin)
 
 # Include directories
 SET(sqlite_INCLUDE_DIRS_CONFIG
